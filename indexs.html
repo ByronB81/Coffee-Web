@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>HTML HELP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Coffe and Ice Cream yo!</h1>
+        <p>Enter your order below and we'll print you a receipt</p>
+      </div>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="person1">A name</label>
+            <input id="person1" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="beverage">
+              <option>Coffee</option>
+              <option>Tea</option>
+              <option>Kombucha</option>
+              <option>Water</option>
+            </select>
+          </div>
+
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="cookiesandcream">
+              Cookies & Cream
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="born">Date of birth:</label>
+            <input id="born" class="form-control" type="date">
+          </div>
+          <div class="form-group">
+            <label for="color">What is your favorite color?</label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          <button type="submit" class="btn btn-success">Print Receipt yo!</button>
+        </form>
+      </div>
+      <div id="magic">
+        <p>Your name <span class="name"></span>.</p>
+        <p>Your drink is <span class="beverage"></span> <strong>$10.00</strong>.</p>
+        <p>Your ice cream flaver is <span class="secondDrink"></span> <strong>$10.00.</strong></p>
+        <p>Your order will be made and dilivered <strong><span class="bday"></span></strong>.</p>
+        <p>Sales tax <strong>$45.00</strong>.</p>
+        <p>Totle is <strong>$65.00</strong>. Not to bad!</p>
+      </div>
+    </div>
+  </body>
+</html>
